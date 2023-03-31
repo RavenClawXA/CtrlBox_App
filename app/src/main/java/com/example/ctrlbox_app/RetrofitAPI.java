@@ -9,6 +9,6 @@ import retrofit2.http.Query;
 public interface RetrofitAPI {
 
         @GET ("CtrlBox_In/:{id}")
-        Call<Datamodels> getDataById(@Query("id") int boxid);
+        Call<Datamodels> getDataById(@Query("id") int BoxId);
 
 }

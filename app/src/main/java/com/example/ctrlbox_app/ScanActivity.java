@@ -39,7 +39,7 @@ public class ScanActivity extends AppCompatActivity {
                 int BoxId =Oncrud.extractBoxIdFromScannedData(scannedData); // Extract the box ID from the scanned data
                 Oncrud oncrud = new Oncrud("BoxId","Vendor", "Vendorname", "Trandate"); // pass appropriate values here
                 oncrud.fetchBoxData(BoxId);
-                 Intent intent = new Intent(ScanActivity.this, Oncrud.class);
+                Intent intent = new Intent(ScanActivity.this, Oncrud.class);
                 intent.putExtra("scannedData", BoxId);
                 startActivity(intent);
                 finish();
